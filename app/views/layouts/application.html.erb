@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hoevelpage</title>
+	<!-- CSS Header and Footer -->
+
+  <title>Michael Hövel</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
   </head>
+  
+<body class="header-fixed">
+	<div class="wrapper">
+		<!--=== Header v6 ===-->
+		<div class="header-v6 header-white-transparent header-sticky">
+			<!-- Navbar -->
+			<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="menu-container">
+					<ul class="nav navbar-nav">						
+						<li><%= link_to "About Me", index_about_path %></li>
+						<li><%= link_to "Projects", index_projects_path %></li>
+						<li><%= link_to "Hobbies", index_hobbies_path %></li>
+						<li><%= link_to "Contact", index_contact_path %></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
 
-  <body>
-    <%= yield %>
+		
+		<%= yield %>
+	</div>
   </body>
 </html>

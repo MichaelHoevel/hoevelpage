@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Michael Hövel</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  </head>
+  <body>
+	<%= link_to "About Me", index_about_path %>
+	<%= link_to "Projects", index_projects_path %>
+	<%= link_to "Hobbies", index_hobbies_path %>
+	<%= link_to "Contact", index_contact_path %>
+	<%= yield %>
+</body>	
+</html>
