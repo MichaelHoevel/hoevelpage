@@ -10,27 +10,36 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
   </head>
   
-<body class="header-fixed">
-	<div class="wrapper">
-		<!--=== Header v6 ===-->
-		<div class="header-v6 header-white-transparent header-sticky">
-			<!-- Navbar -->
-			<div class="collapse navbar-collapse navbar-responsive-collapse">
-				<div class="menu-container">
-					<ul class="nav navbar-nav">						
-						<li><%= link_to "About Me", index_about_path %></li>
-						<li><%= link_to "Projects", index_projects_path %></li>
-						<li><%= link_to "Hobbies", index_hobbies_path %></li>
-						<li><%= link_to "Contact", index_contact_path %></li>
-						
-					</ul>
-				</div>
-			</div>
+<body id="page-top" class="index">
+
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header page-scroll">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+			</button>
+			<a class="navbar-brand page-scroll" href="#page-top">Michael Hövel</a>
 		</div>
 
-		
-		<%= yield %>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse transparent id="mynavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="hidden"> <a href="#page-top"></a>
+					<li><%= link_to "About Me", index_about_path %></li>
+					<li><%= link_to "Projects", index_projects_path %></li>
+					<li><%= link_to "Hobbies", index_hobbies_path %></li>
+					<li><%= link_to "Contact", index_contact_path %></li>
+					
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
 	</div>
-  
-  </body>
+	<!-- /.container-fluid -->
+</nav>
+<section id="content">
+	<%= yield %>
+</section>
+</body>
+
 </html>
