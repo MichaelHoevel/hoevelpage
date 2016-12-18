@@ -3556,36 +3556,38 @@
   padding: 200px 0;
   position: relative;
   text-align: center;
-  background: asset-data-url("2.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
+
+  /*background: asset-data-url("2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;*/
+
 
 .interactive-slider-v2-md {
   padding: 250px 0;
 }
 
 .interactive-slider-v2.img-v1 {
-  background: asset-data-url("2.jpg") no-repeat;
+  background: asset-data-url("about.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-color: black;
 }
 
-.interactive-slider-v2.img-v2 {
-  background: url(../img/bg/14.jpg) no-repeat;
+.interactive-slider-v2.img-contact {
+  background: asset-data-url("contact.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v3 {
-  background: url(../img/bg/img8.jpg) no-repeat;
+  background: asset-data-url("projects.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v4 {
-  background: url(../img/bg/img9.jpg) no-repeat;
+  background: asset-data-url("hobbies.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -4585,7 +4587,14 @@
   position: absolute;
   background: rgba(0,0,0,0.3);
 }
-
+/*
+.revolution-mch-1.img-v1 {
+  background: asset-data-url("2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+}
+*/
 .revolution-ch1 {
   color: #fff;
   font-size: 40px;
