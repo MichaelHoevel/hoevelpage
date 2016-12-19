@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<!-- CSS Header and Footer -->
+<head>
+<!-- CSS Header and Footer -->
 
-  <title>Michael Hövel</title>
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
-  </head>
-  
-<body id="page-top" class="index">
+	<%= csrf_meta_tags %>
 
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header page-scroll">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-			</button>
-			<a class="navbar-brand page-scroll" href="#page-top">Michael Hövel</a>
-		</div>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
+	<title>Inspire | Unify - Responsive Website Template</title>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse transparent id="mynavbar">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="hidden"> <a href="#page-top"></a>
-					<li><%= link_to "About Me", index_about_path %></li>
-					<li><%= link_to "Projects", index_projects_path %></li>
-					<li><%= link_to "Hobbies", index_hobbies_path %></li>
-					<li><%= link_to "Contact", index_contact_path %></li>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Homepage Michael Hoevel">
+	<meta name="author" content="Michael Hoevel">
+
+
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+</head>
+
+<body class="header-fixed">
+	<div class="wrapper">
+		<!--=== Header v6 ===-->
+		<div class="header-v6 header-white-transparent header-sticky">
+			<!-- Navbar -->
+			<div class="navbar mega-menu" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
 					
-			</ul>
+
+						<!-- Navbar Brand -->
+						<div class="navbar-brand">
+							<%= link_to "Michael Hövel", index_about_path %>
+						</div>
+						<!-- ENd Navbar Brand -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<div class="menu-container">
+							<ul class="nav navbar-nav">
+								<li><%= link_to "About Me", index_about_path %></li>
+								<li><%= link_to "Projects", index_projects_path %></li>
+								<li><%= link_to "Hobbies", index_hobbies_path %></li>
+								<li><%= link_to "Contact", index_contact_path %></li>					
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- /.navbar-collapse -->
 	</div>
-	<!-- /.container-fluid -->
-</nav>
-<section id="content">
-	<%= yield %>
-</section>
+	<section id="content">
+		<%= yield %>
+	</section>
 </body>
 
 </html>
