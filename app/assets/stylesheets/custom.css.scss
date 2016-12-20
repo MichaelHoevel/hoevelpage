@@ -1,0 +1,44 @@
+/* Add here all your css styles (customizations) */
+/*Service Info*/
+.service-info {
+	background: asset-data-url("12.png") repeat;
+
+	}
+.content-sm.no-top-margin{
+  padding-top: 0px;
+}
+.interactive-slider-v2.img-about {
+  background: asset-data-url("about.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.interactive-slider-v2.img-contact {
+  background: asset-data-url("contact.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.interactive-slider-v2.img-projects {
+  background: asset-data-url("projects.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.interactive-slider-v2.img-hobbies {
+  background: asset-data-url("hobbies.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.navbar-brand.hoevel a {
+	color: white;
+	font-family: 'Space Mono', monospace;
+}
+/*Media Queries*/
+@media (max-width: 991px) {
+	.navbar-brand.hoevel a {
+		color: black;
+	}
+}
+

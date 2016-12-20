@@ -3552,13 +3552,12 @@
 /*Interactive Slider v2
 ------------------------------------*/
 .interactive-slider-v2 {
-  z-index: 1;
+ 
   padding: 200px 0;
+  overflow: hidden;
   position: relative;
   text-align: center;
-  background: url(../img/bg/18.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
+  width: auto;
 }
 
 .interactive-slider-v2-md {
@@ -3566,25 +3565,25 @@
 }
 
 .interactive-slider-v2.img-v1 {
-  background: url(../img/bg/25.jpg) no-repeat;
+  background: asset-data-url("about.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.interactive-slider-v2.img-v2 {
-  background: url(../img/bg/14.jpg) no-repeat;
+.interactive-slider-v2.img-contact {
+  background: asset-data-url("contact.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v3 {
-  background: url(../img/bg/img8.jpg) no-repeat;
+  background: asset-data-url("projects.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .interactive-slider-v2.img-v4 {
-  background: url(../img/bg/img9.jpg) no-repeat;
+  background: asset-data-url("hobbies.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3632,11 +3631,13 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  width: auto;
+
   content: " ";
   position: absolute;
   background: rgba(0,0,0,.4);
+  
 }
 
 .intro-promo-cover-dark:after {
@@ -4326,11 +4327,13 @@
   display: inline-block;
   transition: all 0.65s, transform 0.65s;
 }
-
+/*
 .blog-thumb .blog-thumb-hover:hover .hover-grad {
   opacity: 1;
+  transform 0.55s;
   transition: opacity, transform 0.55s;
 }
+*/
 
 /*Blog Thumb Description*/
 .blog-thumb .blog-thumb-desc {
@@ -4582,7 +4585,14 @@
   position: absolute;
   background: rgba(0,0,0,0.3);
 }
-
+/*
+.revolution-mch-1.img-v1 {
+  background: asset-data-url("2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+}
+*/
 .revolution-ch1 {
   color: #fff;
   font-size: 40px;
@@ -7746,7 +7756,7 @@ img.img-mouse {
 .service-info {
 	position: relative;
 	padding: 40px 0 50px;
-	/*background: url(../img/patterns/17.png) repeat;*/
+	background: url(../img/patterns/17.png) repeat;
 }
 
 .service-info .info-description {
