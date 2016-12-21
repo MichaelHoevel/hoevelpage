@@ -7,6 +7,13 @@
 .content-sm.no-top-margin{
   padding-top: 0px;
 }
+/*resize picture in case screen width is too small*/
+.img_responsive.max-100{
+  max-width: 100%;
+}
+.col-md-9.centered{
+	padding-left: 10%;
+}
 .interactive-slider-v2.img-about {
   background: asset-data-url("about.jpg") no-repeat;
   background-size: cover;
