@@ -13,7 +13,14 @@
 }
 .col-md-9.centered{
 	padding-left: 10%;
+	
 }
+
+.timeline-v2.hoevel > li .cbp_tmlabel h2 {
+  color: black;
+  text-transform: none;
+}
+
 .interactive-slider-v2.img-about {
   background: asset-data-url("about.jpg") no-repeat;
   background-size: cover;
