@@ -13,7 +13,7 @@ group :development do
   gem 'sqlite3'
 end
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem "puma", ">= 3.12.2"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,6 +51,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'devise'
+gem "bootstrap-sass", ">= 3.4.1"
+gem "devise", ">= 4.7.1"
 gem 'coffee-script-source', '= 1.11.1'
